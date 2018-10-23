@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  verdaccio:
+    image: verdaccio/verdaccio:3
+    container_name: verdaccio
+    ports:
+      - "4873:4873"
+    volumes:
+      - ./conf:/verdaccio/conf
+      - ./plugins:/verdaccio/plugins
+      - ./storage:/verdaccio/storage
+    restart: on-failure
