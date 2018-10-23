@@ -1,6 +1,8 @@
 # verdaccio 404 bug reproducement
 
-To reproduce, do:
+[Reported issue in verdaccio/verdaccio](https://github.com/verdaccio/verdaccio/issues/1085)
+
+## To reproduce, do:
 
 ```bash
 docker-compose up -d
